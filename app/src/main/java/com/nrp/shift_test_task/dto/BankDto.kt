@@ -1,6 +1,6 @@
-package com.nrp.shift_test_task.DTO
+package com.nrp.shift_test_task.dto
 
-class BankDTO (
+class BankDto (
     val name: String,
     val url: String,
     val phone: String,

@@ -1,6 +1,7 @@
 package com.nrp.shift_test_task.network
 
-import com.nrp.shift_test_task.DTO.CardDTO
+import androidx.lifecycle.LiveData
+import com.nrp.shift_test_task.dto.CardDto
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
@@ -19,9 +20,12 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BASE_URL)
     .build()
 
+
+
 interface CardApiService {
-    @GET(basicCardNumber)
-    suspend fun getInfo(): CardDTO
+    val name: LiveData<Int>
+    @GET()
+    suspend fun getInfo(name: LiveData<Int>): CardDto
 }
 
 object CardApi {

@@ -4,7 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/yulia/AndroidStudioProjects/SHIFT_test_task/app/src/main/res/layout/activity_main.xml" value="0.34148550724637683" />
-        <entry key="..\:/Users/yulia/AndroidStudioProjects/SHIFT_test_task/app/src/main/res/layout/fragment_menu.xml" value="0.34148550724637683" />
+        <entry key="..\:/Users/yulia/AndroidStudioProjects/SHIFT_test_task/app/src/main/res/layout/fragment_card_data.xml" value="0.33" />
+        <entry key="..\:/Users/yulia/AndroidStudioProjects/SHIFT_test_task/app/src/main/res/layout/fragment_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

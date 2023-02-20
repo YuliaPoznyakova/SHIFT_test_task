@@ -3,11 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
-
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.nrp.shift_test_task.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
+    app:startDestination="@id/menuFragment">
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.nrp.shift_test_task.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_cardDataFragment"
+            app:destination="@id/cardDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardDataFragment"
+        android:name="com.nrp.shift_test_task.CardDataFragment"
+        android:label="CardDataFragment" >
+        <action
+            android:id="@+id/action_cardDataFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
 </navigation>

@@ -1,6 +1,6 @@
-package com.nrp.shift_test_task.DTO
+package com.nrp.shift_test_task.dto
 
-class CountryDTO (
+class CountryDto (
     numeric: String,
     alpha2: String,
     name: String,
